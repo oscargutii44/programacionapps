@@ -14,6 +14,7 @@ import {
 
 const Separator = () => <View style={page.separator} />;
 
+//main app that gonna be export
 const App = () => {
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
@@ -33,6 +34,7 @@ const App = () => {
         <Text style={page.code}>{JSON.stringify(flattenStyle, null, 2)}</Text>
       </View>
 
+      <Separator />
       <Separator />
 
       <View style={page.fixToText}>
@@ -82,6 +84,8 @@ const App = () => {
     </SafeAreaView>
   );
 };
+
+//styles
 
 const modalCSS = StyleSheet.create({
   centeredView: {
